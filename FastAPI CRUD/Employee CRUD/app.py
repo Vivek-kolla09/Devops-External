@@ -44,7 +44,7 @@ def get_emp():
 
 # UPDATE
 @app.put("/employee/{emp_id}")
-def update_emp(emp_id: str, employee: Employee):
+def update_emp(emp_id: int, employee: Employee):
     result = repository.update_emp(emp_id,employee)
     if result:
         return{

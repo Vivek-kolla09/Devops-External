@@ -12,7 +12,7 @@ def get_emp():
     return details
 
 # UPDATE
-def update_emp(emp_id:str, updated_emp: Employee):
+def update_emp(emp_id:int, updated_emp: Employee):
     for detail in details:
         if detail.emp_id == emp_id:
             # detail.emp_id = updated_emp.emp_id
