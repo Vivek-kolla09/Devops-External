@@ -5,7 +5,7 @@ import repository
 
 app = FastAPI()
 
-details = []
+# details = []
 
 # Home
 @app.get("/")
