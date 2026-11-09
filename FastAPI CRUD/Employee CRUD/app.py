@@ -43,9 +43,9 @@ def get_emp():
     # return {"message": "Employee not found!"}
 
 # UPDATE
-@app.put("/employee/{old_name}")
-def update_emp(old_name: str, employee: Employee):
-    result = repository.update_emp(old_name,employee)
+@app.put("/employee/{emp_id}")
+def update_emp(emp_id: str, employee: Employee):
+    result = repository.update_emp(emp_id,employee)
     if result:
         return{
             "message": "Employee updated successfully!",

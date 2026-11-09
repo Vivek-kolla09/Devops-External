@@ -12,10 +12,10 @@ def get_emp():
     return details
 
 # UPDATE
-def update_emp(old_name:str, updated_emp: Employee):
+def update_emp(empid:str, updated_emp: Employee):
     for detail in details:
-        if detail.name == old_name:
-            detail.emp_id = updated_emp.emp_id
+        if detail.empid == empid:
+            # detail.emp_id = updated_emp.emp_id
             detail.name = updated_emp.name
             detail.age = updated_emp.age
             detail.dept = updated_emp.dept
